@@ -87,6 +87,7 @@
             android:directBootAware="true"
             android:exported="false"
             android:isolatedProcess="true"
+            android:label="@string/app_name"
             android:useAppZygote="true" />
 
         <service
