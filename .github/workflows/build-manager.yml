@@ -168,7 +168,7 @@ jobs:
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             ./gradlew clean assembleRelease -PIS_PR_BUILD=true
           else
-            ./gradlew clean assembleRelease
+            ./gradlew clean assembleRelease -PKSU_PACKAGE_NAME=me.laura.sukki -PKSU_NAME="LauraSuki"
           fi
 
       - name: Upload build artifact
